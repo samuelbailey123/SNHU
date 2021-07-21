@@ -6,3 +6,5 @@
 !.vscode/extentions.json
 *.code-workspace
 .env
+.DS_STORE
+tempCodeRunnerFile.python
