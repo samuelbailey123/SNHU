@@ -1,7 +1,7 @@
 const { model } = require("mongoose");
 
 model.exports = {
-    modelBaseDirectory: 'app_api/models',
+    modelBaseDirectory: 'app_api/models/travlr',
     models: ['*.js', '!db.js'],
     data: 'data', 
     db: 'mongodb://localhost:27017/travlr'
