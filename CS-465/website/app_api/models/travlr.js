@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const tripScheme = new mongoose.Schema({
+const tripSchema = new mongoose.Schema({
     code: {type: String, required: true, index: true},
     name: {type: String, required: true, index: true},
     length: {type: String, required: true}, 
@@ -10,4 +10,4 @@ const tripScheme = new mongoose.Schema({
     description: {type: String, required: true}
 });
 
-mongoose.model('trips', tripScheme);
+mongoose.model('trips', tripSchema);
