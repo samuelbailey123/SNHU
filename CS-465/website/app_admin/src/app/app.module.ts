@@ -21,7 +21,9 @@ import { EditTripComponent } from './edit-trip/edit-trip.component';
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [
     TripDataService

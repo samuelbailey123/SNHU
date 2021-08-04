@@ -20,5 +20,11 @@
     "process-env": "^2.0.2",
     "request": "^2.88.2",
     "seedgoose": "^2.0.2"
+  },
+    "seedgoose": {
+      "modelBaseDirectory": "app_api/models/",
+      "models": "travlr.js",
+      "data": "data",
+      "db": "mongodb://localhost:27017/travlr"
   }
 }
