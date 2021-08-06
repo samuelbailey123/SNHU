@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const hbs = require('hbs');
-require('./app_api/models/db');
+const connection = require('./app_api/models/db');
 
 const indexRouter = require('./app_server/routes/index');
 const usersRouter = require('./app_server/routes/users');
@@ -18,6 +18,7 @@ const apiRouter = require('./app_api/routes/index')
 
 var app = express();
 
+connection.connect()
 // view engine setup
 app.set('views', path.join(__dirname, 'app_server', 'views'));
 hbs.registerPartials(path.join(__dirname, 'app_server', 'views/partials'))

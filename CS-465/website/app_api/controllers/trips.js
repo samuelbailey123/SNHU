@@ -41,7 +41,7 @@ const tripsFindCode = async (req,res) => {
         });
 };
 
-const tripsAddTrip = async (req, res) => {
+const    tripsAddTrip = async (req, res) => {
     model
         .create({
             code: req.body.code,
@@ -55,6 +55,7 @@ const tripsAddTrip = async (req, res) => {
         },
         (err, trip) => {
             if (err){
+                console.log(err);
                 return res
                     .status(400)
                     .json(err);

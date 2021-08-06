@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const host = '127.0.0.1'
-const dbURI = 'mongodb://${host}/travlr';
+const host = 'localhost'
+const dbURI = 'mongodb://localhost:27017/travlr';
 const readLine = require('readline');
 
 mongoose.set('useUnifiedTopology', true);
@@ -60,3 +60,6 @@ process.on('SIGTERM', () => {
 });
   
 require('./travlr');
+module.exports = {
+    connect
+};

@@ -11,6 +11,7 @@ const renderTravelList = (req, res, responseBody) => {
     if(!(responseBody instanceof Array)){
         message = 'API Lookup Error';
         responseBody = [];
+        
     }else{
         if(!responseBody.length){
             message = 'No trips found in the database';
@@ -24,7 +25,7 @@ const renderTravelList = (req, res, responseBody) => {
 };
 
 const travelList = (req, res) => {
-    const path = '/api/trips';
+    const path = '/api/trips';    
     const requestOptions = {
         url: `${apiOptions.server}${path}`,
         method: 'GET', 
@@ -45,16 +46,3 @@ const travelList = (req, res) => {
 module.exports = {
     travelList
 };
-
-
-// const fs = require('fs');
-// const trips = JSON.parse(fs.readFileSync('./data/trips.json', 'utf-8'));
-
-// const travel = (req, res) => {
-//     pageTitle = process.env.npm_package_description + ' - Travel'
-//     res.render('travel', {title: pageTitle, trips});
-// };
-
-// module.exports = {
-//     travel
-// }
