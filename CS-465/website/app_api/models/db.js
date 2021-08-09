@@ -60,7 +60,7 @@ process.on('SIGTERM', () => {
 });
   
 require('./travlr');
-require('/user');
+require('./user');
 module.exports = {
     connect
 };
