@@ -1,1 +1,0 @@
-char user_input[20];
