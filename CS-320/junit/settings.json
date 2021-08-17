@@ -1,0 +1,22 @@
+{
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestion": "automaticallyOverrodeDefaultValue",
+"files.exclude":{
+    "**/.classpath": true, 
+    "**/.project": true, 
+    "**/.settings": true, 
+    "**/.factorypath": true
+},
+"java.errors.incompleteClasspath.severity": "ignore",
+"[json]":{
+
+},
+"workbench.startupEditor": "newUntilitedFile",
+
+"java.home": "/Users/samuelbailey/Documents/CS-320/jdk-15.0.2_osx-x64_bin.tar",
+
+"java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "/Users/samuelbailey/Documents/CS-320/org-junit-platform-junit-platform-console-standalone-1.6.0-junit-platform-console-standalone-1.6.0.jar "
+]
+}
