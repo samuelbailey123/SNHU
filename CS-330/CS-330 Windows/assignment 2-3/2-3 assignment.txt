@@ -1,0 +1,19 @@
+project 2-3 CS-330 
+
+	-1.0f, 1.0f, 0.0f,      // top-first_third of the screen
+        1.0f, 0.0f, 0.0f, 1.0f, // red
+
+        -1.0f, 0.0f, 0.0f,     // bottom-left of the screen
+        0.0f, 0.0f, 1.0f, 1.0f, // blue
+
+        -0.5f, 0.0f, 0.0f,      // bottom-center of the screen
+        0.0f, 1.0f, 0.0f, 1.0f, // green
+
+        -0.5f, 0.0f, 0.0f,       // top-second_third of the screen
+        0.0f, 1.0f, 0.0f, 1.0f, // green
+
+        0.0f, -1.0f, 0.0f,      // bottom-center of the screen
+        0.0f, 1.0f, 0.0f, 1.0f, // green
+
+        0.0f, 0.0f, 0.0f,      // bottom-right of the screen
+        1.0f, 0.0f, 0.0f, 1.0f  // red

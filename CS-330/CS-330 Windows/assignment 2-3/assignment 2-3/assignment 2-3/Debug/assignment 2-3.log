@@ -1,0 +1,4 @@
+﻿  Source.cpp
+  LINK : C:\Users\iSamu\OneDrive\Desktop\assignment 2-3\assignment 2-3\Debug\assignment 2-3.exe not found or not built by the last incremental link; performing full link
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  assignment 2-3.vcxproj -> C:\Users\iSamu\OneDrive\Desktop\assignment 2-3\assignment 2-3\Debug\assignment 2-3.exe
