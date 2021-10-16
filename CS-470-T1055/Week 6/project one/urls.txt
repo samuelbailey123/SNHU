@@ -1,0 +1,5 @@
+api 
+https://fwnwe7cps7.execute-api.us-east-2.amazonaws.com/api
+
+web frontend
+http://samuel-bailey-cs-470-project-one.s3-website-us-east-1.amazonaws.com/
