@@ -1,1 +1,0 @@
-Source.a1:Debug|Win32:C:/Users/iSamu/OneDrive/Desktop/Project1/Source.cpp
