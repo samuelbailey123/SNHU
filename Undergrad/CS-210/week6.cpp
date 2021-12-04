@@ -14,7 +14,6 @@ void displayMultTable();
 void doubleAValue();
 void printMenu();
 
-
 /*
 Description:
    To call this function, pass the name of the Python function you wish to call and the string parameter you want to send
@@ -48,7 +47,6 @@ int callIntFunc(string proc, int param){
    }
    //printf("Result is %d\n", _PyLong_AsInt(presult));
    Py_DECREF(pValue);
-   // Clean up
    Py_DECREF(programModule);
    Py_DECREF(programName);
    // Finish the Python Interpreter
@@ -58,28 +56,19 @@ int callIntFunc(string proc, int param){
 }
 
 
-void main()
-{
-
+void main(){
    // create variable to hold user input
    int userInput;
-
    // begin a do-while loop as a menu to repeatedly ask user for input and control program flow.
-   do {
-
-       // print out instructions
+   do{
        printMenu();
-
-       try {
-
+       try{
            // read user input into var
            cin >> userInput;      
-
            // make sure the input is a valid, handled numberber, if not throw error and restart loop
            if (userInput > 3 || userInput < 1) {
                throw runtime_error("Invalid input numberber");
            }
-
            // use a switch statement to control program flow based on user input. Calls function corresponding to user choice
            // each function handles one choice
            switch (userInput) {
@@ -110,7 +99,7 @@ void main()
 }
 
 // function for printing program instructions
-void printMenu() {
+void printMenu(){
    cout << "1: Display a Multiplication Table" << endl;
    cout << "2: Double a Value" << endl;
    cout << "3: Exit" << endl;
@@ -119,13 +108,11 @@ void printMenu() {
 }
 
 // C++ function for calling a python function which renders a multiplication table with input.
-void displayMultTable() {
-
+void displayMultTable(){
    // create a var to hold the value of the numberber the user wants to create a multiplication table for
    int userInput;
-
    // use a try-catch block to handle if a user enters a negative value
-   try {
+   try{
        system("cls");
        cout << "Enter a numberber for the multiplication table" << endl;
        cin >> userInput;
@@ -134,19 +121,15 @@ void displayMultTable() {
        if (userInput < 0) {
            throw runtime_error("No negative number allowed");
        }
-
        // call the callIntFunc which calls a method in python and passes the userInput value to said method.
        callIntFunc("MultiplicationTable", userInput);
-
        cout << endl;
-
        // clear screen and exit
        system("pause");
        system("cls");
-
    }
    // if the user entered negative input, makes them aware and exits back to start of program
-   catch (runtime_error& excpt) {
+   catch (runtime_error& excpt){
        system("cls");
        cout << excpt.what() << endl;
        cout << "Entered a negative number" << endl;
@@ -155,32 +138,25 @@ void displayMultTable() {
        system("cls");
    }
 }
-
 // C++ function for calling a python function that returns a double value
 // DISCLAIMER: All commentary in doubleAValue() is the same as in MultiplicationTable function, up to the Int Function. Skip ahead to see below:
-void doubleAValue() {
-
+void doubleAValue(){
    int userInput;
-
    try {
        system("cls");
        cout << "Enter a number to double" << endl;
        cin >> userInput;
-
        if (userInput < 0) {
            throw runtime_error("No negative number allowed here :");
        }
-
        system("cls");
-
        // Here, we call the In Function again, but this time we specify a different function to call in the Python module
        // and once again pass this function userInput.
        cout << callIntFunc("DoubleValue", userInput) << endl;
-
        system("pause");
        system("cls");
-      
    }
+
    catch (runtime_error& excpt) {
        system("cls");
        cout << excpt.what() << endl;
@@ -188,7 +164,5 @@ void doubleAValue() {
        cout << endl;
        system("pause");
        system("cls");
-
    }
-
 }
