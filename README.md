@@ -13,4 +13,4 @@ If you want to make a PR(Pull Request) to add or edit code to this project, plea
 You will also need a [GPG key](https://help.github.com/articles/signing-a-commit/) to sign your PR. These keys verify you are who you say you are, and it just makes the repo look cooler. 
 
 #### Contact ####
-Feel free to reach me at **[@email](mailto:baileysam1997@gmail.com)** or **[@twitter](https://twitter.com/samuel_baileyy)** 
+Feel free to reach me at **[@email](mailto:baileysam1997@gmail.com)** or **[@twitter](https://twitter.com/samuel_baileyy)**
