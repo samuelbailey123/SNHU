@@ -10,8 +10,7 @@ Program to display time in 12 and 24 format
 void display(Clock clock);
 int menu();
 
-int main()
-{
+int main(){
    //Clear screen
    system("CLS");
    //Current time
