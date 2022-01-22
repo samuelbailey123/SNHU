@@ -11,8 +11,7 @@ Clock::Clock(int hrs, int mnts, int secs) {
    setSeconds(secs);
 }
 //Setters
-void Clock::setHours(int hrs)
-{
+void Clock::setHours(int hrs){
    if (hrs > 23) {
        hours = 0;
    }
@@ -20,8 +19,7 @@ void Clock::setHours(int hrs)
        hours = hrs;
    }
 };
-void Clock::setMinutes(int mnts)
-{
+void Clock::setMinutes(int mnts) {
    if (mnts > 59) {
        minutes = mnts;
        seconds += 1;
@@ -41,8 +39,7 @@ void Clock::setMinutes(int mnts)
        minutes = mnts;
    }
 }
-void Clock::setSeconds(int secs)
-{
+void Clock::setSeconds(int secs) {
    if (secs > 59) {
        seconds = secs - 60;
        minutes += 1;
@@ -69,8 +66,7 @@ int Clock::getSeconds() {
    return seconds;
 }
 //Display 24 format
-void Clock::display24format()
-{
+void Clock::display24format() {
    if (hours < 10 || minutes < 10 || seconds < 10) {
        if (hours < 10) {
 
@@ -97,10 +93,8 @@ void Clock::display24format()
    }
 }
 //Display 12 format
-void Clock::display12format()
-{
-   if (hours > 12)
-   {
+void Clock::display12format() {
+   if (hours > 12) {
        hours = hours - 12;
        if (hours < 10 || minutes < 10 || seconds < 10) {
            if (hours < 10) {
@@ -126,8 +120,7 @@ void Clock::display12format()
            cout << hours << ":" << minutes << ":" << seconds << " PM";
        }
    }
-   else if (hours == 12)
-   {
+   else if (hours == 12) {
        hours = 12;
        if (hours < 10 || minutes < 10 || seconds < 10) {
            if (hours < 10) {
@@ -153,8 +146,7 @@ void Clock::display12format()
            cout << hours << ":" << minutes << ":" << seconds << " PM";
        }
    }
-   else if (hours == 0)
-   {
+   else if (hours == 0) {
        hours = 12;
        if (hours < 10 || minutes < 10 || seconds < 10) {
            if (hours < 10) {
