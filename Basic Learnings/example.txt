@@ -1,0 +1,11 @@
+title amount
+Samuel 23
+Drew 22 
+Vance 20
+Bailey 19
+Dorothy 58
+Ellen 83
+Shana 88
+Jason 90
+Chris 45
+Jared 19
