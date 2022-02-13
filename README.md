@@ -1,6 +1,4 @@
-[![Build](https://github.com/samuelbailey123/SNHU/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/samuelbailey123/SNHU/actions/workflows/build.yml)
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=samuelbailey123_SNHU&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=samuelbailey123_SNHU)
+[![Build](https://github.com/samuelbailey123/SNHU/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/samuelbailey123/SNHU/actions/workflows/build.yml)[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=samuelbailey123_SNHU&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=samuelbailey123_SNHU)
 
 ## Welcome! ## 
 This project is all of my classes from [Southern New Hampshire University](https://www.snhu.edu/)
