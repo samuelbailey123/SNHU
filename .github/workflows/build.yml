@@ -18,10 +18,6 @@ jobs:
         uses: SonarSource/sonarcloud-github-action@master
         with: 
           projectBaseDir: Undergrad/CS-465
-        args: >
-          -Dsonar.projectKey=samuelbailey123_SNHU
-          -Dsonar.organization=samuelbailey123
-          -Dsonar.verbose=true
         env:
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
