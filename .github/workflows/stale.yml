@@ -25,6 +25,3 @@ jobs:
         stale-pr-message: 'Stale pull request message'
         stale-issue-label: 'no-issue-activity'
         stale-pr-label: 'no-pr-activity'
-    - name: Close Stale Issues
-      uses: actions/stale@v4.1.0
-
