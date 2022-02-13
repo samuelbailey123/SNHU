@@ -17,7 +17,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with: 
-          projectBaseDir: Undergrad/CS-470*
+          projectBaseDir: Undergrad/CS-465
         env:
           GITHUB_TOKEN: ${{ secrets.G_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
