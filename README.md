@@ -1,3 +1,5 @@
+[![Build](https://github.com/samuelbailey123/SNHU/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/samuelbailey123/SNHU/actions/workflows/build.yml)
+
 ## Welcome! ## 
 This project is all of my classes from [Southern New Hampshire University](https://www.snhu.edu/)
 
