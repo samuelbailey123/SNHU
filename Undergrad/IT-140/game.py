@@ -23,13 +23,6 @@ player_inventory = []
 current_room     = 'Great Hall'  # Starting location
 move             = ''  # declare move and clear input
 
-# player instructions
-print('Welcome to the Asylum, Doctor. You must find all six object hidden in the manor to escape in the Tardis.\n'
-      'If you encounter the Dalek, you will be EXTERMINATED!!\n'
-      'You can enter North, South, East, or West to move. Enter Quit to leave game.\n'
-      'Press enter to begin')
-input()  # get first input to start game
-
 def room_guide():
     if current_room == 'Great Hall':
         if items[current_room] == {'a Dalek'}: # check for Dalek to end game
@@ -219,18 +212,27 @@ def room_guide():
     else:
         print('You did not get the item') # confirm refusal of item
 
-while move != 'quitgame':
-    print('\nYou are standing in the', current_room + '.')  # give player location and move options
-    room_guide()
-    print('Which direction do you want to move?')
-    # print('\n', player_inventory)
-    # print('\n', len.player_inventory)
-    # print(move, len(player_inventory))
-    move = input().lower().strip()  # convert to lower case and removed extra spaces
+        
+if __name__ == '__main__': # main start for code to run
+    # player instructions
+    print('Welcome to the Asylum, Doctor. You must find all six object hidden in the manor to escape in the Tardis.\n'
+          'If you encounter the Dalek, you will be EXTERMINATED!!\n'
+          'You can enter North, South, East, or West to move. Enter Quit to leave game.\n'
+          'Press enter to begin')
+    input()  # get first input to start game        
 
-    if move in rooms[current_room]: # validate move selection
-        current_room = rooms[current_room][move] #move to room
-    elif move == 'quit':
-        current_room = 'End'
-    else:
-        print("You can't go that way.") # invalid move or bad input response
+    while move != 'quitgame':
+        print('\nYou are standing in the', current_room + '.')  # give player location and move options
+        room_guide()
+        print('Which direction do you want to move?')
+        # print('\n', player_inventory)
+        # print('\n', len.player_inventory)
+        # print(move, len(player_inventory))
+        move = input().lower().strip()  # convert to lower case and removed extra spaces
+
+        if move in rooms[current_room]: # validate move selection
+            current_room = rooms[current_room][move] #move to room
+        elif move == 'quit':
+            current_room = 'End'
+        else:
+            print("You can't go that way.") # invalid move or bad input response
